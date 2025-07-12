@@ -11,9 +11,40 @@ import {
   BiSolidQuoteAltLeft,
   BiSolidQuoteLeft,
   BiSolidQuoteRight,
-  BiStar,
-  BiSolidStar,
 } from "react-icons/bi";
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+
+// Star Rating Component with numeric value
+function StarRating({ rating }) {
+  const stars = [];
+  const fullStars = Math.floor(rating);
+  const hasHalfStar = rating % 1 >= 0.5;
+
+  // Full stars
+  for (let i = 0; i < fullStars; i++) {
+    stars.push(<FaStar key={`full-${i}`} className="text-yellow-400" />);
+  }
+
+  // Half star
+  if (hasHalfStar) {
+    stars.push(<FaStarHalfAlt key="half" className="text-yellow-400" />);
+  }
+
+  // Empty stars
+  const emptyStars = 5 - stars.length;
+  for (let i = 0; i < emptyStars; i++) {
+    stars.push(<FaRegStar key={`empty-${i}`} className="text-yellow-400" />);
+  }
+
+  return (
+    <div className="flex items-center justify-center gap-2 mb-4">
+      <div className="flex gap-1">{stars}</div>
+      <span className="text-yellow-500 font-bold text-lg">
+        {rating.toFixed(1)}
+      </span>
+    </div>
+  );
+}
 
 const TestimonialsSection = () => {
   const swiperRef = useRef(null);
@@ -74,25 +105,6 @@ const TestimonialsSection = () => {
       once: true,
     });
   }, []);
-
-  // Render star rating
-  const renderStars = (rating) => {
-    const stars = [];
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 !== 0;
-
-    for (let i = 1; i <= 5; i++) {
-      if (i <= fullStars) {
-        stars.push(<BiSolidStar key={i} className="text-yellow-400 text-xl" />);
-      } else if (i === fullStars + 1 && hasHalfStar) {
-        stars.push(<BiStar key={i} className="text-yellow-400 text-xl" />);
-      } else {
-        stars.push(<BiStar key={i} className="text-yellow-400 text-xl" />);
-      }
-    }
-
-    return <div className="flex justify-center gap-1 mb-4">{stars}</div>;
-  };
 
   return (
     <section
@@ -165,7 +177,7 @@ const TestimonialsSection = () => {
 
                   {/* Testimonial content */}
                   <div className="relative z-10">
-                    {renderStars(testimonial.rating)}
+                    <StarRating rating={testimonial.rating} />
 
                     <p className="text-gray-700 dark:text-gray-300 italic mb-6 text-center">
                       {testimonial.content}
