@@ -7,7 +7,7 @@ import SkillsSection from "../components/SkillsSection";
 import ResumeSection from "../components/ResumeSection";
 import PortfolioSection from "../components/PortfolioSection";
 import ServicesSection from "../components/ServicesSection";
-import { TestimonialsSection } from "../components/TestimonialsSection";
+import TestimonialsSection from "../components/TestimonialsSection";
 import { ContactSection } from "../components/ContactSection";
 
 export default function HomePage() {
