@@ -1,77 +1,287 @@
 // src/components/ContactSection.jsx
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { BiEnvelope, BiPhone, BiMap, BiPaperPlane } from "react-icons/bi";
 import AOS from "aos";
+import emailjs from "@emailjs/browser";
 import "aos/dist/aos.css";
-export function ContactSection() {
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-  }, []);
-  const [form, setForm] = useState({
+
+const ContactSection = () => {
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
-  const handleChange = (e) =>
-    setForm({ ...form, [e.target.name]: e.target.value });
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Message sent!");
+  const [formState, setFormState] = useState({
+    loading: false,
+    error: false,
+    success: false,
+  });
+  const formRef = useRef();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setFormState({ loading: true, error: false, success: false });
+
+    try {
+      // Replace with your EmailJS service ID, template ID, and public key
+      await emailjs.sendForm(
+        "YOUR_EMAILJS_SERVICE_ID",
+        "YOUR_EMAILJS_TEMPLATE_ID",
+        formRef.current,
+        "YOUR_EMAILJS_PUBLIC_KEY"
+      );
+
+      setFormState({ loading: false, error: false, success: true });
+      setFormData({ name: "", email: "", subject: "", message: "" });
+
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setFormState((prev) => ({ ...prev, success: false }));
+      }, 5000);
+    } catch (error) {
+      console.error("Email sending error:", error);
+      setFormState({ loading: false, error: true, success: false });
+    }
+  };
+
   return (
-    <section id="contact" className="py-16">
-      <div className="container mx-auto px-4" data-aos="fade-up">
-        <h2 className="text-4xl font-bold mb-4">Contact</h2>
-        <p className="mb-8 text-gray-700">
-          Ready to start your next project? Reach out!
-        </p>
-        <form
-          onSubmit={handleSubmit}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-br from-[#f8fbff] to-[#e6f0ff] dark:from-gray-900 dark:to-gray-950"
+    >
+      <div className="container mx-auto px-4 max-w-7xl">
+        {/* Section Title */}
+        <div className="text-center mb-16" data-aos="fade-up">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 relative pb-3">
+            Get In Touch
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-600 rounded-full"></div>
+          </h2>
+          <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
+            Have a project in mind or want to discuss opportunities? Reach out
+            and let's create something amazing together.
+          </p>
+        </div>
+
+        <div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
-          <input
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            type="text"
-            placeholder="Your Name"
-            className="p-3 border rounded"
-            required
-          />
-          <input
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            type="email"
-            placeholder="Your Email"
-            className="p-3 border rounded"
-            required
-          />
-          <input
-            name="subject"
-            value={form.subject}
-            onChange={handleChange}
-            type="text"
-            placeholder="Subject"
-            className="p-3 border rounded col-span-2"
-            required
-          />
-          <textarea
-            name="message"
-            value={form.message}
-            onChange={handleChange}
-            placeholder="Message"
-            className="p-3 border rounded col-span-2 h-32"
-            required
-          />
-          <button
-            type="submit"
-            className="bg-blue-600 text-white px-6 py-3 rounded-lg col-span-2 hover:bg-blue-700 transition"
-          >
-            Send Message
-          </button>
-        </form>
+          {/* Contact Info */}
+          <div className="space-y-8">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-100 dark:border-gray-700">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                Contact Information
+              </h3>
+
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-blue-600 dark:text-blue-400">
+                    <BiMap className="text-xl" />
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
+                      Our Location
+                    </h4>
+                    <p className="text-gray-600 dark:text-gray-300 mt-1">
+                      Innovation Hub, 123 Tech Avenue
+                      <br />
+                      San Francisco, CA 94103
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-blue-600 dark:text-blue-400">
+                    <BiPhone className="text-xl" />
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
+                      Call Us
+                    </h4>
+                    <p className="text-gray-600 dark:text-gray-300 mt-1">
+                      +1 (415) 555-0123
+                      <br />
+                      Mon-Fri, 9am-5pm PST
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-blue-600 dark:text-blue-400">
+                    <BiEnvelope className="text-xl" />
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
+                      Email Us
+                    </h4>
+                    <p className="text-gray-600 dark:text-gray-300 mt-1">
+                      professormorris@gmail.com
+                      <br />
+                      support@example.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  Find Us On Map
+                </h4>
+                <div className="rounded-xl overflow-hidden shadow-md h-80">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.575063750649!2d-122.4194154846821!3d37.77492997975921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1658956787890!5m2!1sen!2sus"
+                    className="w-full h-full border-0"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Google Maps Location"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Form - Updated with flex layout */}
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-100 dark:border-gray-700 flex flex-col">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              Send Us a Message
+            </h3>
+
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className="flex flex-col flex-grow space-y-6"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-gray-700 dark:text-gray-300 mb-2 font-medium"
+                  >
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-gray-700 dark:text-gray-300 mb-2 font-medium"
+                  >
+                    Your Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                    placeholder="john@example.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="subject"
+                  className="block text-gray-700 dark:text-gray-300 mb-2 font-medium"
+                >
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                  placeholder="How can we help?"
+                  required
+                />
+              </div>
+
+              {/* Expanded textarea container */}
+              <div className="flex-grow flex flex-col">
+                <label
+                  htmlFor="message"
+                  className="block text-gray-700 dark:text-gray-300 mb-2 font-medium"
+                >
+                  Message
+                </label>
+                <div className="flex-grow">
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="w-full h-full min-h-[150px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                    placeholder="Tell us about your project..."
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <div className="relative">
+                {formState.loading && (
+                  <div className="absolute inset-0 bg-white/80 dark:bg-gray-800/80 flex items-center justify-center rounded-lg">
+                    <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-blue-500"></div>
+                  </div>
+                )}
+
+                <button
+                  type="submit"
+                  disabled={formState.loading}
+                  className="w-full flex items-center justify-center space-x-2 py-3 px-6 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-lg hover:shadow-xl"
+                >
+                  
+                  <span>Send Message</span>
+                  <BiPaperPlane className="w-5 h-5" />
+                </button>
+
+                {formState.error && (
+                  <div className="mt-4 p-3 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 rounded-lg text-center">
+                    Error sending message. Please try again.
+                  </div>
+                )}
+
+                {formState.success && (
+                  <div className="mt-4 p-3 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 rounded-lg text-center">
+                    Your message has been sent successfully! We'll contact you
+                    soon.
+                  </div>
+                )}
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   );
-}
+};
+
+export default ContactSection;
