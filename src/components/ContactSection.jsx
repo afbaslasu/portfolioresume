@@ -36,12 +36,11 @@ const ContactSection = () => {
     setFormState({ loading: true, error: false, success: false });
 
     try {
-      // Replace with your EmailJS service ID, template ID, and public key
       await emailjs.sendForm(
-        "YOUR_EMAILJS_SERVICE_ID",
-        "YOUR_EMAILJS_TEMPLATE_ID",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        "YOUR_EMAILJS_PUBLIC_KEY"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       setFormState({ loading: false, error: false, success: true });
@@ -129,9 +128,9 @@ const ContactSection = () => {
                       Email Us
                     </h4>
                     <p className="text-gray-600 dark:text-gray-300 mt-1">
-                      professormorris@gmail.com
+                      smile@c2harvard.com
                       <br />
-                      support@example.com
+                      smilelinkus@gmail.com
                     </p>
                   </div>
                 </div>
@@ -258,7 +257,6 @@ const ContactSection = () => {
                   disabled={formState.loading}
                   className="w-full flex items-center justify-center space-x-2 py-3 px-6 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-lg hover:shadow-xl"
                 >
-                  
                   <span>Send Message</span>
                   <BiPaperPlane className="w-5 h-5" />
                 </button>
