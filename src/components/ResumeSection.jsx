@@ -14,26 +14,28 @@ import {
 const resumeData = {
   title: "Professional Journey",
   description:
-    "My career path reflects continuous growth and dedication to mastering the craft of digital creation. Below is a timeline of my professional and educational milestones.",
+    "My career path reflects continuous growth and dedication to mastering 21st century teaching pedagogy to the craft of digital creation. Below is a timeline of my professional and educational milestones.",
   summary: {
-    name: "Alex Morgan",
-    title: "Senior UI/UX Engineer & Full-Stack Developer",
+    name: "Ismail Ibadehin",
+    title: "Teacher/Author & Graphics Design/Web Developer",
     description:
-      "Innovative developer with 8+ years of experience creating exceptional digital products. Specializing in building responsive, accessible applications with cutting-edge technologies.",
+      "Innovative writer/designer with 17+ years of teaching experience & creating exceptional digital products. Specializing in building responsive, accessible applications with cutting-edge technologies.",
     contact: [
-      { label: "Location", value: "San Francisco, CA" },
-      { label: "Email", value: "alex.morgan@example.com" },
-      { label: "LinkedIn", value: "linkedin.com/in/alexmorgan" },
+      { label: "Location", value: "Kubwa, Abuja" },
+      { label: "Email", value: "afbaslasu@gmail.com" },
+      { label: "LinkedIn", value: "https://www.linkedin.com/in/ibaslasu/" },
     ],
     skills: [
       "React",
-      "TypeScript",
       "Node.js",
+      "Git/Github",
       "Figma",
       "UI/UX Design",
-      "AWS",
+      "AWS/AMZ KDP",
       "Responsive Design",
-      "Accessibility",
+      "Ms. Office Tools",
+      "Adobe Illustrator",
+      "Photoshop",
     ],
   },
   education: [
@@ -102,19 +104,29 @@ const resumeData = {
   ],
   certifications: [
     {
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2022",
+      title: "Fullstack Web Development",
+      issuer: "FreeCodeCamp",
+      date: "2024",
     },
     {
-      title: "Google UX Design Professional Certificate",
+      title: "Frontend Web Design/Development",
+      issuer: "Aptech Center",
+      date: "2015",
+    },
+    {
+      title: "Microsoft Office Specialist",
+      issuer: "Udemy Academy",
+      date: "2018",
+    },
+    {
+      title: "Google WorkSpace Administrator",
       issuer: "Google",
-      date: "2021",
+      date: "2019",
     },
     {
-      title: "React Advanced Concepts",
-      issuer: "Frontend Masters",
-      date: "2020",
+      title: "System Management",
+      issuer: "Computer City College",
+      date: "2002",
     },
   ],
 };
