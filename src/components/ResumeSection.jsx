@@ -41,64 +41,91 @@ const resumeData = {
   education: [
     {
       id: 1,
-      title: "M.S. Computer Science",
-      institution: "Stanford University",
-      period: "2014 - 2016",
+      title: "Programming, Computer Science",
+      institution: "Massachusetts Institute of Technology",
+      period: "2019 - 2020",
       description:
-        "Specialized in Human-Computer Interaction and Machine Learning. Thesis on 'Improving Accessibility in Web Applications through AI-Driven Adaptations'.",
-      achievements: ["Graduated with honors", "Research published in ACM CHI"],
+        "Specialized in Advance Web Design, UI/UX Web App. Thesis on 'Improving Accessibility in Web Applications through AI-Driven Adaptations'.",
+      achievements: [
+        "Graduated with honors",
+        "Research published in Github VCS",
+      ],
     },
     {
       id: 2,
-      title: "B.S. Software Engineering",
-      institution: "MIT",
-      period: "2010 - 2014",
+      title: "Web Design/Development",
+      institution: "Aptech Center",
+      period: "2015 - 2016",
       description:
-        "Focus on full-stack development and software architecture. Minored in Design and Digital Media.",
+        "Focus on front-end development and software architecture. Minored in Design and Digital Media.",
       achievements: [
-        "Dean's List all semesters",
-        "Winner of MIT App Challenge 2013",
+        "Aptech's List 2016 Best Graduating Students",
+        "Team Member of Aptech Web Challenge Winner 2016",
+      ],
+    },
+    {
+      id: 3,
+      title: "Microsoft Office Specialist",
+      institution: "Udemy Academy",
+      period: "2017 - 2018",
+      description:
+        "Focus on front-end development and software architecture. Minored in Design and Digital Media.",
+      achievements: [
+        "Aptech's List 2016 Best Graduating Students",
+        "Third Runner-up Winner Aptech Web Challenge 2016",
+      ],
+    },
+    {
+      id: 4,
+      title: "B.Eng., Biosystem Engineer",
+      institution: "University of Ilorin",
+      period: "2002 - 2007",
+      description:
+        "Focus on design and development of farm machines and farm structure architecture. Minored in Wiring and Electrification of farm structure.",
+      achievements: [
+        "Dean's List All Semester Member",
+        "Design & Development of Juice Extractor Machine",
       ],
     },
   ],
   experience: [
     {
       id: 1,
-      title: "Lead UI/UX Engineer",
-      company: "TechInnovate Inc.",
-      period: "2020 - Present",
+      title: "Maths Teacher/Google Education Admin",
+      company: "Abraham Lincoln America Academy",
+      period: "2022 - 2023",
       description:
-        "Leading a team of 12 developers and designers to create cutting-edge SaaS products for enterprise clients.",
+        "Teach Mathematics, Science and oversee the school Science Club. Design Lesson Plan, set digital CA, and Paper Examination. Grade, Record, & Design Modern Report Card for students",
       achievements: [
-        "Redesigned flagship product resulting in 40% increase in user engagement",
-        "Implemented design system adopted company-wide",
-        "Mentored junior developers and established training programs",
+        "Redesigned and reconfigured G Suite from Google Enterprise to Google WorkSpace for Education",
+        "Configure students gadgets for easy login and accessibility to the school google education online learning workspace",
+        "Equip teachers with technology & integration strategies for classroom learning",
       ],
     },
     {
       id: 2,
-      title: "Senior Frontend Developer",
-      company: "Digital Solutions Co.",
-      period: "2017 - 2020",
+      title: "Mathematics/ICT Instructor",
+      company: "Cradle2Harvard International",
+      period: "2021 - 2022",
       description:
-        "Developed complex web applications for financial and healthcare industries with strict compliance requirements.",
+        "Prepare students for WAEC, NECO & IGCSE examination. Oversee IGCSE programs and manage the JET club. Maintain the school website. Train staff on Google Workspace technology integration into the classroom",
       achievements: [
-        "Architected micro-frontend framework adopted across 5 products",
-        "Reduced page load times by 65% through performance optimization",
-        "Implemented CI/CD pipeline reducing deployment time by 80%",
+        "Register the school on Google Workspace for Education",
+        "Setup and configure the school Google Workspace for Education, create logins for students and staffs",
+        "Design online Hub for lesson plan and lesson notes",
       ],
     },
     {
       id: 3,
-      title: "Full-Stack Developer",
-      company: "Creative Web Agency",
-      period: "2016 - 2017",
+      title: "Mathematics/Physics Teacher",
+      company: "Cradle2Harvard International",
+      period: "2021 - 2022",
       description:
-        "Built custom web applications and e-commerce solutions for diverse client portfolio.",
+        "Prepare students for WAEC, NECO & IGCSE examination. Maintain the school website. Train staff on Google Workspace technology. Design Lesson Plan, set CA, and Examination. Grade, Record, & Design Modern Report Card for students",
       achievements: [
-        "Developed 15+ client websites with 100% satisfaction rate",
-        "Created reusable component library saving 200+ development hours annually",
-        "Introduced accessibility audits as standard practice",
+        "Register the school on Google Workspace for Education",
+        "Setup and configure the school Google Workspace for Education, create logins for students and staffs",
+        "Design a website for the school",
       ],
     },
   ],
@@ -170,7 +197,10 @@ export default function ResumeSection() {
         >
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/3 flex flex-col items-center text-center">
-              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mb-4" />
+              <img
+                src="/public/assets/images/ismail-ibadehin-pics.png"
+                className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mb-4"
+              />
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                 {resumeData.summary.name}
               </h3>
