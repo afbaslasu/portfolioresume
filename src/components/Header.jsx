@@ -9,6 +9,7 @@ import {
   FaTimes,
   FaChevronDown,
   FaChevronUp,
+  FaTiktok,
 } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -72,6 +73,9 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Check if any company route is active
+  const isPortfolioActive = location.pathname.startsWith("/portfolio");
+
   // Check if any product route is active
   const isProductActive = location.pathname.startsWith("/product");
 
@@ -83,6 +87,9 @@ const Header = () => {
 
   // Check if marketplace route is active
   const isMarketplaceActive = location.pathname.startsWith("/marketplace");
+
+  // Check if marketplace route is active
+  const isBlogActive = location.pathname.startsWith("/blog");
 
   // Product dropdown items
   const productItems = [
@@ -140,25 +147,37 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-2" : "bg-white/90 py-4"
+        isScrolled ? "bg-white shadow-md py-2" : "bg-white/90 py-3"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center w-25 md:w-32">
             <NavLink to="/" className="flex items-center">
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-700 w-10 h-10 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">S</span>
-              </div>
-              <span className="ml-3 text-xl font-bold text-gray-800">
-                Startup
-              </span>
+              <img
+                src="/public/assets/images/smilelink-logo-white-bg.png"
+                alt="smilelink logo"
+                w
+              />
             </NavLink>
           </div>
 
           {/* Desktop Navigation */}
           <nav ref={navRef} className="hidden md:flex items-center space-x-8">
+            {/* Portfolio */}
+            <NavLink
+              to="/portfolio"
+              className={({ isActive }) =>
+                `font-medium transition-colors ${
+                  isActive
+                    ? "text-indigo-600"
+                    : "text-gray-700 hover:text-indigo-600"
+                }`
+              }
+            >
+              Portfolio
+            </NavLink>
             {/* Product Dropdown */}
             <div className="relative">
               <button
@@ -294,33 +313,52 @@ const Header = () => {
                 </div>
               )}
             </div>
+            {/* Blog */}
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                `font-medium transition-colors ${
+                  isActive
+                    ? "text-indigo-600"
+                    : "text-gray-700 hover:text-indigo-600"
+                }`
+              }
+            >
+              Blog
+            </NavLink>
           </nav>
 
           {/* Social Icons */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             <a
-              href="#"
+              href="https://www.twitter.com/afbaslasu"
               className="text-gray-500 hover:text-indigo-600 transition-colors"
             >
               <FaTwitter className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://web.facebook.com/ibaslasu/"
               className="text-gray-500 hover:text-indigo-600 transition-colors"
             >
               <FaFacebookF className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/afbaslasu"
               className="text-gray-500 hover:text-indigo-600 transition-colors"
             >
               <FaYoutube className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/ibaslasu/"
               className="text-gray-500 hover:text-indigo-600 transition-colors"
             >
               <FaLinkedinIn className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.tiktok.com/@afbaslasu"
+              className="text-gray-500 hover:text-indigo-600 transition-colors"
+            >
+              <FaTiktok className="w-5 h-5" />
             </a>
           </div>
 
@@ -355,6 +393,19 @@ const Header = () => {
           </div>
 
           <nav className="flex-1 overflow-y-auto">
+            {/* Portfolio */}
+            <NavLink
+              to="/portfolio"
+              className={({ isActive }) =>
+                `font-medium transition-colors ${
+                  isActive
+                    ? "text-indigo-600"
+                    : "text-gray-700 hover:text-indigo-600"
+                }`
+              }
+            >
+              Portfolio
+            </NavLink>
             {/* Product Accordion */}
             <div className="mb-6">
               <button
@@ -478,33 +529,52 @@ const Header = () => {
                 </div>
               )}
             </div>
+            {/* Blog */}
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                `font-medium transition-colors ${
+                  isActive
+                    ? "text-indigo-600"
+                    : "text-gray-700 hover:text-indigo-600"
+                }`
+              }
+            >
+              Blog
+            </NavLink>
           </nav>
 
           {/* Mobile Social Icons */}
           <div className="flex justify-center space-x-8 py-8 border-t border-gray-200">
             <a
-              href="#"
+              href="https://www.twitter.com/afbaslasu"
               className="text-gray-500 hover:text-indigo-600 transition-colors"
             >
               <FaTwitter className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://web.facebook.com/ibaslasu/"
               className="text-gray-500 hover:text-indigo-600 transition-colors"
             >
               <FaFacebookF className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/afbaslasu"
               className="text-gray-500 hover:text-indigo-600 transition-colors"
             >
               <FaYoutube className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/ibaslasu/"
               className="text-gray-500 hover:text-indigo-600 transition-colors"
             >
               <FaLinkedinIn className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.tiktok.com/@afbaslasu"
+              className="text-gray-500 hover:text-indigo-600 transition-colors"
+            >
+              <FaTiktok className="w-6 h-6" />
             </a>
           </div>
         </div>
