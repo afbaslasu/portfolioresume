@@ -10,9 +10,13 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 
 const BACKGROUNDS = [
-  "/assets/images/student-849819_1280.jpg",
-  "/assets/images/education-bg1.jpg",
-  "/assets/images/tech-bg2.jpg",
+  "/public/assets/images/tech-replying-client-6_192.jpg",
+  "/public/assets/images/typing-849806_1920.jpg",
+  "/public/assets/images/student-849819_1280b.jpg",
+  "/public/assets/images/student-849819_1280.jpg",
+  "/public/assets/images/student-849825_1280.jpg",
+  "/public/assets/images/web-developer-1.jpg",
+  "/public/assets/images/startup-593305_1280.jpg"
 ];
 
 export default function Hero() {
@@ -95,7 +99,7 @@ export default function Hero() {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <h1 className="text-5xl md:text-7xl xl:text-8xl font-extrabold text-white uppercase tracking-tight mb-6 mt-16 drop-shadow-md">
+            <h1 className="text-5xl md:text-7xl xl:text-8xl font-extrabold text-white uppercase tracking-wide  mb-6 mt-16 drop-shadow-md">
               Ismail <span className="text-cyan-400">Ibadehin</span>
             </h1>
 
@@ -120,7 +124,7 @@ export default function Hero() {
               <a
                 href="/assets/documents/resume.pdf"
                 download="Ismail_Ibadehin_Resume.pdf"
-                className="group inline-flex items-center text-xl bg-gradient-to-r from-emerald-500 to-cyan-700 hover:from-cyan-500 hover:to-emerald-500 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1"
+                className="group inline-flex items-center gap-1 bg-gradient-to-r from-emerald-500 to-cyan-700 hover:from-cyan-500 hover:to-emerald-500 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 <BiDownload className="mr-3 text-xl transition-transform group-hover:scale-125" />
                 <span>

@@ -158,7 +158,6 @@ const Header = () => {
               <img
                 src="/public/assets/images/smilelink-logo-white-bg.png"
                 alt="smilelink logo"
-                w
               />
             </NavLink>
           </div>

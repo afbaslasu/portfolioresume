@@ -21,44 +21,49 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 
 const aboutData = {
-  heading: "UI/UX Designer & Web Developer",
-  tagline: "Crafting digital experiences that matter",
+  heading: "Instructor/Author & Web Developer",
+  tagline:
+    "Integrating digital technology seemlessly into classroom learning pedagogy",
   intro:
-    "I transform complex problems into elegant solutions through clean design and robust code. With a passion for creating pixel-perfect, accessible applications, I bridge the gap between aesthetics and functionality.",
+    "I transform complex problems into simpler composable chunks using both inductive and inductive teaching method for easier comprehension by students. And with a passion for creating pixel-perfect, accessible applications, I design web application that bridge the gap between classroom and off school learning.",
   profileImage: "/public/assets/images/typing-849806_1920.jpg",
   stats: [
-    { value: "300+", label: "Projects" },
-    { value: "10M+", label: "Users" },
+    { value: "100+", label: "Projects" },
+    { value: "10K+", label: "Users" },
     { value: "98%", label: "Satisfaction" },
     { value: "15+", label: "Awards" },
   ],
   infoLeft: [
-    { label: "Specialization", value: "Full-Stack Development" },
-    { label: "Education", value: "MIT '16, M.Eng Computer Science" },
-    { label: "Technologies", value: "React, Node, WebGL, Three.js" },
+    { label: "Specialization", value: "Teaching/Web Development" },
+    { label: "Education", value: "UNILORIN, B.Eng Biosystem Engr." },
+    { label: "Technologies", value: "React, Ms. Office, Adobe Illustrator" },
   ],
   infoRight: [
-    { label: "Experience", value: "8+ Years" },
+    { label: "Experience", value: "17+ Years" },
     { label: "Methodology", value: "Agile & Lean UX" },
-    { label: "Current", value: "Lead Developer @ TechInnovate" },
+    { label: "Current", value: "Lead Developer @ smileLink" },
   ],
   infoLeft2: [
-    { label: "Birthday", value: "1 May 1995", icon: <BiCalendar /> },
-    { label: "Website", value: "www.example.com", icon: <BiGlobe /> },
-    { label: "Phone", value: "+123 456 7890", icon: <BiPhone /> },
-    { label: "City", value: "New York, USA", icon: <BiMap /> },
+    { label: "Birthday", value: "XX May 1984", icon: <BiCalendar /> },
+    {
+      label: "Website",
+      value: "https://afbaslasu.github.io/",
+      icon: <BiGlobe />,
+    },
+    { label: "Phone", value: "081-6017-5628", icon: <BiPhone /> },
+    { label: "City", value: "Kubwa, Abuja", icon: <BiMap /> },
   ],
   infoRight2: [
-    { label: "Age", value: "30", icon: <BiUser /> },
-    { label: "Degree", value: "Master", icon: <FaGraduationCap /> },
-    { label: "Email", value: "email@example.com", icon: <BiEnvelope /> },
+    { label: "Age", value: "41", icon: <BiUser /> },
+    { label: "Degree", value: "B.Engineering", icon: <FaGraduationCap /> },
+    { label: "Email", value: "smile@c2harvard.com/afbaslasu@gmail.com", icon: <BiEnvelope /> },
     { label: "Freelance", value: "Available", icon: <BiCheckCircle /> },
   ],
   signature: "/assets/img/signature.png",
   ctaText: "Download CV",
   cvPath: "/assets/images/ibasResume3.pdf",
   badges: [
-    { icon: <BiCodeCurly />, text: "AWS Certified" },
+    { icon: <BiCodeCurly />, text: "AMZ KDP Certified" },
     { icon: <BiCodeCurly />, text: "Google UX Certified" },
     { icon: <BiCodeCurly />, text: "React Specialist" },
   ],
@@ -99,8 +104,9 @@ export default function AboutSection() {
           <span className="inline-block text-[var(--accent-color)] font-mono text-sm tracking-wider mb-3">
             PROFESSIONAL PROFILE
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 bg-clip-text">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2 bg-clip-text">
             About Me
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-25 h-1 bg-blue-600 "></div>
           </h2>
           <div className="w-20 h-1 bg-[var(--accent-color)] mx-auto"></div>
         </div>
