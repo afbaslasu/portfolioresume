@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { usePureCounter } from "../hooks/usePureCounter";
-import { FaSmile, FaBriefcase, FaClock, FaUsers } from "react-icons/fa";
+import { FaSmile, FaBriefcase, FaClock, FaBook } from "react-icons/fa";
 
 const stats = [
-  { icon: FaSmile, end: 232, label: "Happy Clients" },
-  { icon: FaBriefcase, end: 521, label: "Projects" },
-  { icon: FaClock, end: 1453, label: "Hours Of Support" },
-  { icon: FaUsers, end: 32, label: "Hard Workers" },
+  { icon: FaSmile, end: 323, label: "Happy Clients" },
+  { icon: FaBriefcase, end: 120, label: "Projects" },
+  { icon: FaClock, end: 6205, label: "Hours Of Support" },
+  { icon: FaBook, end: 26, label: "Published Books" },
 ];
 
 export function StatsSection() {
