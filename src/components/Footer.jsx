@@ -15,8 +15,11 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-16 max-w-7xl">
         {/* Logo */}
         <div className="flex justify-center mb-4">
-          <div className="text-2xl font-bold tracking-tighter text-gray-900">
-            Your<span className="text-blue-600">Logo</span>
+          <div className="w-28 md:w-36 lg:w-48">
+            <img
+              src="/public/assets/images/smilelink-logo-white-bg.png"
+              alt=""
+            />
           </div>
         </div>
 
@@ -32,31 +35,31 @@ const Footer = () => {
         <div className="flex justify-center mb-12">
           <div className="flex space-x-5">
             <Link
-              to="#"
+              to="https://www.twitter.com/afbaslasu"
               className="text-gray-400 hover:text-blue-500 transition-colors duration-300"
             >
               <FaTwitter className="text-xl" />
             </Link>
             <Link
-              to="#"
+              to="https://www.linkedin.com/in/ibaslasu/"
               className="text-gray-400 hover:text-blue-700 transition-colors duration-300"
             >
               <FaLinkedinIn className="text-xl" />
             </Link>
             <Link
-              to="#"
+              to="https://web.facebook.com/ibaslasu/"
               className="text-gray-400 hover:text-blue-800 transition-colors duration-300"
             >
               <FaFacebookF className="text-xl" />
             </Link>
             <Link
-              to="#"
+              to="https://github.com/afbaslasu"
               className="text-gray-400 hover:text-gray-700 transition-colors duration-300"
             >
               <FaGithub className="text-xl" />
             </Link>
             <Link
-              to="#"
+              to="https://afbaslasu.github.io"
               className="text-gray-400 hover:text-pink-600 transition-colors duration-300"
             >
               <FaDribbble className="text-xl" />
@@ -226,7 +229,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="pt-8 border-t border-gray-200 text-center">
           <p className="text-gray-500 text-sm">
-            © 2024 Your Company, Inc. All rights reserved.
+            © 2024 smileLink, Inc. All rights reserved. This website is powered by <span className="text-blue-500">Ismail Ibadehin</span>
           </p>
         </div>
       </div>
