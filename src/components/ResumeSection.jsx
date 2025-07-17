@@ -14,7 +14,7 @@ import {
 const resumeData = {
   title: "Professional Journey",
   description:
-    "My career path reflects continuous growth and dedication to mastering 21st century teaching pedagogy to the craft of digital creation. Below is a timeline of my professional and educational milestones.",
+    "My career path reflects continuous growth and dedication to mastering 21st century teaching pedagogy, to the craft of digital creation. Below is a timeline of my professional and educational milestones.",
   summary: {
     name: "Ismail Ibadehin",
     title: "Teacher/Author & Graphics Design/Web Developer",
@@ -48,43 +48,44 @@ const resumeData = {
         "Specialized in Advance Web Design, UI/UX Web App. Thesis on 'Improving Accessibility in Web Applications through AI-Driven Adaptations'.",
       achievements: [
         "Graduated with honors",
-        "Research published in Github VCS",
+        "Project published in Github VCS",
       ],
     },
     {
       id: 2,
-      title: "Web Design/Development",
-      institution: "Aptech Center",
-      period: "2015 - 2016",
-      description:
-        "Focus on front-end development and software architecture. Minored in Design and Digital Media.",
-      achievements: [
-        "Aptech's List 2016 Best Graduating Students",
-        "Team Member of Aptech Web Challenge Winner 2016",
-      ],
-    },
-    {
-      id: 3,
       title: "Microsoft Office Specialist",
       institution: "Udemy Academy",
       period: "2017 - 2018",
       description:
-        "Focus on front-end development and software architecture. Minored in Design and Digital Media.",
+        "Majored in Microsoft Excel, Microsoft PowerPoint & Microsoft Word (Expert Level), minored in Outlook & Access",
       achievements: [
-        "Aptech's List 2016 Best Graduating Students",
-        "Third Runner-up Winner Aptech Web Challenge 2016",
+        "Recognized as a top-tier credential for Office professionals",
+        "Proves deep, professional-level mastery & Validates hands-on skill in  Word, Excel, PowerPoint",
       ],
     },
+    {
+      id: 3,
+      title: "Web Design/Development",
+      institution: "Aptech Center",
+      period: "2015 - 2016",
+      description:
+        "Focused on front-end web development and software architecture; minored in design and digital media.",
+      achievements: [
+        "Aptech 2016 Best Graduating Students List",
+        "Team Member, Aptech Web Challenge Winners (2016)",
+      ],
+    },
+
     {
       id: 4,
       title: "B.Eng., Biosystem Engineer",
       institution: "University of Ilorin",
       period: "2002 - 2007",
       description:
-        "Focus on design and development of farm machines and farm structure architecture. Minored in Wiring and Electrification of farm structure.",
+        "Focused on the design and development of farm machinery and farm structure architecture; minored in wiring and electrification of farm structures.",
       achievements: [
-        "Dean's List All Semester Member",
-        "Design & Development of Juice Extractor Machine",
+        "Dean’s List Member (All Semesters)",
+        "Design and Development of a Juice Extractor Machine",
       ],
     },
   ],
@@ -98,8 +99,10 @@ const resumeData = {
         "Teach Mathematics, Science and oversee the school Science Club. Design Lesson Plan, set digital CA, and Paper Examination. Grade, Record, & Design Modern Report Card for students",
       achievements: [
         "Redesigned and reconfigured G Suite from Google Enterprise to Google WorkSpace for Education",
-        "Configure students gadgets for easy login and accessibility to the school google education online learning workspace",
-        "Equip teachers with technology & integration strategies for classroom learning",
+        "Configure students gadgets for easy login, &  set restrictions for student devices, & Configure Google Meet settings like recording, participant limits, and access.",
+        "Set up Classroom and assign teachers permission to create/manage classes.",
+        "Help users recover passwords or access locked accounts, & investigate login issues, syncing errors, or blocked content.",
+        "Connect third-party educational tools (e.g., Kahoot, Canva), & set up Vault for email and document archiving",
       ],
     },
     {
@@ -112,19 +115,23 @@ const resumeData = {
       achievements: [
         "Register the school on Google Workspace for Education",
         "Setup and configure the school Google Workspace for Education, create logins for students and staffs",
+        "Train staff and students on using Google Workspace tools effectively.",
+        "Manage Gmail routing, filtering, and spam control, & Enable or restrict Google services (e.g., YouTube, Meet, Gmail) based on age, group, or need.",
         "Design online Hub for lesson plan and lesson notes",
       ],
     },
     {
       id: 3,
       title: "Mathematics/Physics Teacher",
-      company: "Cradle2Harvard International",
-      period: "2021 - 2022",
+      company: "Surestart College",
+      period: "2018 - 2021",
       description:
         "Prepare students for WAEC, NECO & IGCSE examination. Maintain the school website. Train staff on Google Workspace technology. Design Lesson Plan, set CA, and Examination. Grade, Record, & Design Modern Report Card for students",
       achievements: [
         "Register the school on Google Workspace for Education",
-        "Setup and configure the school Google Workspace for Education, create logins for students and staffs",
+        "Create, manage, and delete user accounts for students, teachers, and staff.",
+        "Organize users into organizational units (OUs) by grade, department, or role.",
+        "Enable or restrict Google services (e.g., YouTube, Meet, Gmail) based on age, group, or need.",
         "Design a website for the school",
       ],
     },
@@ -184,6 +191,7 @@ export default function ResumeSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             My Resume
           </h2>
+          
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
             {resumeData.description}
           </p>
@@ -207,7 +215,7 @@ export default function ResumeSection() {
               <p className="text-lg text-[var(--accent-color)] font-medium mb-4">
                 {resumeData.summary.title}
               </p>
-              <p className="text-gray-700 dark:text-gray-300 mb-6">
+              <p className="text-gray-700 dark:text-gray-300 mb-6 text-left">
                 {resumeData.summary.description}
               </p>
 

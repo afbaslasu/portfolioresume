@@ -25,7 +25,7 @@ const aboutData = {
   tagline:
     "Integrating digital technology seemlessly into classroom learning pedagogy",
   intro:
-    "I transform complex problems into simpler composable chunks using both inductive and inductive teaching method for easier comprehension by students. And with a passion for creating pixel-perfect, accessible applications, I design web application that bridge the gap between classroom and off school learning.",
+    "I transform complex problems into simpler composable chunks using both deductive and inductive teaching method for easier comprehension by students. And with a passion for creating pixel-perfect, accessible applications, I design web application that bridge the gap between classroom and off school learning.",
   profileImage: "/public/assets/images/typing-849806_1920.jpg",
   stats: [
     { value: "100+", label: "Projects" },

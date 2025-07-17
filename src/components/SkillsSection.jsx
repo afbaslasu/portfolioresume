@@ -14,7 +14,7 @@ import {
 const skillsData = {
   title: "Technical Expertise",
   description:
-    "My technical proficiency spans across graphics design to web development, with specialized focus on creating responsive, accessible, and performant web applications.",
+    "My technical proficiency span across graphics design to web development, with specialized focus on creating responsive, accessible, and performant web applications.",
   categories: [
     {
       name: "Frontend Development",

@@ -35,11 +35,11 @@ const portfolioData = {
       category: "web",
       description:
         "Comprehensive financial analytics platform with real-time data visualization",
-      image: "/assets/img/portfolio/app-1.jpg",
+      image: "/public/assets/images/Fintech Dashboard.png",
       gallery: [
-        "/assets/img/portfolio/app-1.jpg",
-        "/assets/img/portfolio/app-2.jpg",
-        "/assets/img/portfolio/app-3.jpg",
+        "/public/assets/images/Fintech Dashboard.png",
+        "/public/assets/images/Audit Firm App.png",
+        "//public/assets/images/IOT Dashboard.png",
       ],
     },
     {
@@ -47,10 +47,10 @@ const portfolioData = {
       title: "E-commerce Redesign",
       category: "design",
       description: "Complete UI/UX overhaul for fashion retail platform",
-      image: "/assets/img/portfolio/product-1.jpg",
+      image: "/public/assets/images/E-commerce Redesign.png",
       gallery: [
-        "/assets/img/portfolio/product-1.jpg",
-        "/assets/img/portfolio/product-2.jpg",
+        "/public/assets/images/E-Commerce HeaderBanner 2.png",
+        "/public/assets/images/E-Commerce HeaderBanner 1.png",
       ],
     },
     {
@@ -59,10 +59,10 @@ const portfolioData = {
       category: "mobile",
       description:
         "Telemedicine platform with appointment scheduling and video consultations",
-      image: "/assets/img/portfolio/branding-1.jpg",
+      image: "/public/assets/images/Healthcare App.png",
       gallery: [
-        "/assets/img/portfolio/branding-1.jpg",
-        "/assets/img/portfolio/branding-2.jpg",
+        "/public/assets/images/Healthcare App.png",
+        "/public/assets/images/tech-replying-client-6_192.jpg",
       ],
     },
     {
@@ -70,10 +70,10 @@ const portfolioData = {
       title: "Design System",
       category: "design",
       description: "Comprehensive design system for enterprise SaaS product",
-      image: "/assets/img/portfolio/books-1.jpg",
+      image: "/public/assets/images/SaaS enterprise product.png",
       gallery: [
-        "/assets/img/portfolio/books-1.jpg",
-        "/assets/img/portfolio/books-2.jpg",
+        "/public/assets/images/SaaS enterprise product.png",
+        "/public/assets/images/web-dev-526.jpg",
       ],
     },
     {
@@ -81,10 +81,10 @@ const portfolioData = {
       title: "API Integration Platform",
       category: "development",
       description: "Middleware solution connecting multiple enterprise systems",
-      image: "/assets/img/portfolio/app-2.jpg",
+      image: "/public/assets/images/AI API Integration Platform.png",
       gallery: [
-        "/assets/img/portfolio/app-2.jpg",
-        "/assets/img/portfolio/app-3.jpg",
+        "/public/assets/images/AI API Integration Platform.png",
+        "/public/assets/images/web-dev-915.jpg",
       ],
     },
     {
@@ -92,10 +92,10 @@ const portfolioData = {
       title: "Travel Booking App",
       category: "mobile",
       description: "End-to-end travel experience with AI recommendations",
-      image: "/assets/img/portfolio/product-2.jpg",
+      image: "/public/assets/images/Travel Booking App.png",
       gallery: [
-        "/assets/img/portfolio/product-2.jpg",
-        "/assets/img/portfolio/product-3.jpg",
+        "/public/assets/images/Travel Booking App.png",
+        "/public/assets/images/student-849819_1280b.jpg",
       ],
     },
     {
@@ -103,10 +103,10 @@ const portfolioData = {
       title: "Brand Identity",
       category: "design",
       description: "Complete rebranding for tech startup",
-      image: "/assets/img/portfolio/branding-2.jpg",
+      image: "/public/assets/images/Brand Identity.png",
       gallery: [
-        "/assets/img/portfolio/branding-2.jpg",
-        "/assets/img/portfolio/branding-3.jpg",
+        "/public/assets/images/Brand Identity.png",
+        "/public/assets/images/web-dev-art-420.jpg",
       ],
     },
     {
@@ -115,10 +115,10 @@ const portfolioData = {
       category: "web",
       description:
         "Interactive learning management system with progress tracking",
-      image: "/assets/img/portfolio/books-2.jpg",
+      image: "/public/assets/images/E-Learning Platform.png",
       gallery: [
-        "/assets/img/portfolio/books-2.jpg",
-        "/assets/img/portfolio/books-3.jpg",
+        "/public/assets/images/E-Learning Platform.png",
+        "/public/assets/images/student-849825_1280.jpg",
       ],
     },
     {
@@ -126,10 +126,10 @@ const portfolioData = {
       title: "Performance Optimization",
       category: "development",
       description: "Speed enhancements for high-traffic e-commerce site",
-      image: "/assets/img/portfolio/app-3.jpg",
+      image: "/public/assets/images/seo Performance Optimization.png",
       gallery: [
-        "/assets/img/portfolio/app-3.jpg",
-        "/assets/img/portfolio/app-1.jpg",
+        "/public/assets/images/seo Performance Optimization.png",
+        "/public/assets/images/team-group-489.jpg",
       ],
     },
     {
@@ -137,10 +137,10 @@ const portfolioData = {
       title: "UX Research Report",
       category: "case",
       description: "Comprehensive study on mobile banking behaviors",
-      image: "/assets/img/portfolio/product-3.jpg",
+      image: "/public/assets/images/UX Research Report.png",
       gallery: [
-        "/assets/img/portfolio/product-3.jpg",
-        "/assets/img/portfolio/product-1.jpg",
+        "/public/assets/images/UX Research Report.png",
+        "/public/assets/images/workplace-1245776_1280.jpg",
       ],
     },
     {
@@ -148,10 +148,10 @@ const portfolioData = {
       title: "IoT Dashboard",
       category: "web",
       description: "Real-time monitoring for smart home devices",
-      image: "/assets/img/portfolio/branding-3.jpg",
+      image: "/public/assets/images/IOT Dashboard.png",
       gallery: [
-        "/assets/img/portfolio/branding-3.jpg",
-        "/assets/img/portfolio/branding-1.jpg",
+        "/public/assets/images/IOT Dashboard.png",
+        "/public/assets/images/work-5382501_1280.jpg",
       ],
     },
     {
@@ -159,10 +159,10 @@ const portfolioData = {
       title: "Accessibility Audit",
       category: "case",
       description: "WCAG compliance improvements for government portal",
-      image: "/assets/img/portfolio/books-3.jpg",
+      image: "/public/assets/images/Real Estate Construction.png",
       gallery: [
-        "/assets/img/portfolio/books-3.jpg",
-        "/assets/img/portfolio/books-2.jpg",
+        "/public/assets/images/Real Estate Construction.png",
+        "/public/assets/images/Audit Firm App.png",
       ],
     },
   ],
@@ -217,7 +217,7 @@ export default function PortfolioSection() {
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 relative pb-3">
               My Portfolio
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-600 rounded-full"></div>
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-25 h-1 bg-blue-600 "></div>
             </h2>
             <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
               {portfolioData.description}
@@ -249,7 +249,7 @@ export default function PortfolioSection() {
 
         {/* Portfolio Grid with Tailwind responsive classes */}
         <div
-          className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
           data-aos="fade-up"
           data-aos-delay="200"
         >
