@@ -53,48 +53,48 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Kafahyat Olabintan",
       role: "Product Director, TechNova",
       content:
-        "Working with this team transformed our product strategy. Their insights and technical expertise helped us increase user engagement by 42% in just three months.",
+        "Working with his team transformed our product strategy. Their insights and technical expertise helped us increase user engagement by 42% in just three months.",
       rating: 5,
-      image: "/assets/img/testimonials/testimonials-1.jpg",
+      image: "/public/assets/images/team-6.jpg",
     },
     {
       id: 2,
-      name: "Michael Rodriguez",
-      role: "CEO, InnovateX",
+      name: "Mojeed Olakunle",
+      role: "CEO, IbasLogic",
       content:
         "The attention to detail and creative approach delivered beyond our expectations. Our website redesign resulted in a 78% increase in conversion rates.",
       rating: 4.5,
-      image: "/assets/img/testimonials/testimonials-2.jpg",
+      image: "/public/assets/images/team-6.jpg",
     },
     {
       id: 3,
-      name: "Emily Chen",
-      role: "Marketing Director, GrowthLab",
+      name: "AbdAkeem Bolaji",
+      role: "Managing Director, iBuildEstate",
       content:
-        "Their strategic thinking combined with technical excellence created a solution that perfectly addresses our complex business requirements.",
+        "His strategic thinking combined with technical excellence created a solution that perfectly addresses our complex business requirements.",
       rating: 5,
-      image: "/assets/img/testimonials/testimonials-3.jpg",
+      image: "/public/assets/images/team-6.jpg",
     },
     {
       id: 4,
-      name: "David Thompson",
-      role: "CTO, FutureTech",
+      name: "Philip Shaibu",
+      role: "Prorietor, Cradle2Harvard",
       content:
-        "The team's ability to understand our vision and translate it into a seamless user experience was remarkable. The project was delivered on time and under budget.",
+        "His team's ability to understand our vision and translate it into a seamless user experience was remarkable. The project was delivered on time and under budget.",
       rating: 5,
-      image: "/assets/img/testimonials/testimonials-4.jpg",
+      image: "/public/assets/images/team-6.jpg",
     },
     {
       id: 5,
-      name: "Jennifer Park",
+      name: "Rasheedat Omotosho",
       role: "Founder, StartupHub",
       content:
         "Working with these professionals has been a game-changer for our business. Their technical expertise and creative problem-solving delivered exceptional results.",
       rating: 4.5,
-      image: "/assets/img/testimonials/testimonials-5.jpg",
+      image: "/public/assets/images/team-6.jpg",
     },
   ];
 
@@ -122,12 +122,12 @@ const TestimonialsSection = () => {
             CLIENT FEEDBACK
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 relative pb-3">
-            What Our Clients Say
+            What My Clients Say
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-25 h-1 bg-blue-600 "></div>
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-            Don't just take our word for it. Hear from professionals who've
-            experienced our services firsthand.
+            Don't just take my word for it. Hear from professionals who've
+            experienced my services firsthand.
           </p>
         </div>
 

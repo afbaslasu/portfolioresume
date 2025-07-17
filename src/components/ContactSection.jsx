@@ -96,9 +96,9 @@ const ContactSection = () => {
                       Our Location
                     </h4>
                     <p className="text-gray-600 dark:text-gray-300 mt-1">
-                      Innovation Hub, 123 Tech Avenue
+                      smileLink Inc., 19 Ellicot Avenue
                       <br />
-                      San Francisco, CA 94103
+                      Kubwa, Abuja 901101
                     </p>
                   </div>
                 </div>
@@ -112,9 +112,9 @@ const ContactSection = () => {
                       Call Us
                     </h4>
                     <p className="text-gray-600 dark:text-gray-300 mt-1">
-                      +1 (415) 555-0123
+                      +234 (816) 017-5628
                       <br />
-                      Mon-Fri, 9am-5pm PST
+                      Mon-Fri, 9am-5pm GMT
                     </p>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                    placeholder="John Doe"
+                    placeholder="Mike Dangote"
                     required
                   />
                 </div>
@@ -199,7 +199,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                    placeholder="john@example.com"
+                    placeholder="dangote@example.com"
                     required
                   />
                 </div>

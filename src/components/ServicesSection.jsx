@@ -99,8 +99,8 @@ const ServicesSection = () => {
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-25 h-1 bg-blue-600 "></div>
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-            We deliver cutting-edge solutions that drive business growth and
-            digital transformation. Our services are designed to meet the unique
+            I deliver cutting-edge solutions that drive business growth and
+            digital transformation. My services are designed to meet the unique
             challenges of the modern digital landscape.
           </p>
         </div>
