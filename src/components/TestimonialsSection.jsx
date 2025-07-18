@@ -58,7 +58,7 @@ const TestimonialsSection = () => {
       content:
         "Working with his team transformed our product strategy. Their insights and technical expertise helped us increase user engagement by 42% in just three months.",
       rating: 5,
-      image: "/public/assets/images/kahfy.jpeg",
+      image: "/assets/images/kahfy.jpeg",
     },
     {
       id: 2,
@@ -67,7 +67,7 @@ const TestimonialsSection = () => {
       content:
         "The attention to detail and creative approach delivered beyond our expectations. Our website redesign resulted in a 78% increase in conversion rates.",
       rating: 4.5,
-      image: "/public/assets/images/ibaslogic.jpeg",
+      image: "/assets/images/ibaslogic.jpeg",
     },
     {
       id: 3,
@@ -76,7 +76,7 @@ const TestimonialsSection = () => {
       content:
         "His strategic thinking combined with technical excellence created a solution that perfectly addresses our complex business requirements.",
       rating: 5,
-      image: "/public/assets/images/bj.jpg",
+      image: "/assets/images/bj.jpg",
     },
     {
       id: 4,
@@ -85,7 +85,7 @@ const TestimonialsSection = () => {
       content:
         "His team's ability to understand our vision and translate it into a seamless user experience was remarkable. The project was delivered on time and under budget.",
       rating: 5,
-      image: "/public/assets/images/phrank_shaibu.jpeg",
+      image: "/assets/images/phrank_shaibu.jpeg",
     },
     {
       id: 5,
@@ -94,7 +94,7 @@ const TestimonialsSection = () => {
       content:
         "Working with these professionals has been a game-changer for our business. Their technical expertise and creative problem-solving delivered exceptional results.",
       rating: 4.5,
-      image: "/public/assets/images/rashy.jpg",
+      image: "/assets/images/rashy.jpg",
     },
   ];
 
