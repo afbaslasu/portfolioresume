@@ -10,13 +10,13 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 
 const BACKGROUNDS = [
-  "/public/assets/images/tech-replying-client-6_192.jpg",
-  "/public/assets/images/typing-849806_1920.jpg",
-  "/public/assets/images/student-849819_1280b.jpg",
-  "/public/assets/images/student-849819_1280.jpg",
-  "/public/assets/images/student-849825_1280.jpg",
-  "/public/assets/images/web-developer-1.jpg",
-  "/public/assets/images/startup-593305_1280.jpg"
+  "/assets/images/tech-replying-client-6_192.jpg",
+  "/assets/images/typing-849806_1920.jpg",
+  "/assets/images/student-849819_1280b.jpg",
+  "/assets/images/student-849819_1280.jpg",
+  "/assets/images/student-849825_1280.jpg",
+  "/assets/images/web-developer-1.jpg",
+  "/assets/images/startup-593305_1280.jpg"
 ];
 
 export default function Hero() {

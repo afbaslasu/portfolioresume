@@ -70,10 +70,10 @@ const portfolioData = {
       title: "Design System",
       category: "design",
       description: "Comprehensive design system for enterprise SaaS product",
-      image: "/public/assets/images/SaaS enterprise product.png",
+      image: "/assets/images/SaaS enterprise product.png",
       gallery: [
-        "/public/assets/images/SaaS enterprise product.png",
-        "/public/assets/images/web-dev-526.jpg",
+        "/assets/images/SaaS enterprise product.png",
+        "/assets/images/web-dev-526.jpg",
       ],
     },
     {
@@ -81,10 +81,10 @@ const portfolioData = {
       title: "API Integration Platform",
       category: "development",
       description: "Middleware solution connecting multiple enterprise systems",
-      image: "/public/assets/images/AI API Integration Platform.png",
+      image: "/assets/images/AI API Integration Platform.png",
       gallery: [
-        "/public/assets/images/AI API Integration Platform.png",
-        "/public/assets/images/web-dev-915.jpg",
+        "/assets/images/AI API Integration Platform.png",
+        "/assets/images/web-dev-915.jpg",
       ],
     },
     {
@@ -92,10 +92,10 @@ const portfolioData = {
       title: "Travel Booking App",
       category: "mobile",
       description: "End-to-end travel experience with AI recommendations",
-      image: "/public/assets/images/Travel Booking App.png",
+      image: "/assets/images/Travel Booking App.png",
       gallery: [
-        "/public/assets/images/Travel Booking App.png",
-        "/public/assets/images/student-849819_1280b.jpg",
+        "/assets/images/Travel Booking App.png",
+        "/assets/images/student-849819_1280b.jpg",
       ],
     },
     {
@@ -103,10 +103,10 @@ const portfolioData = {
       title: "Brand Identity",
       category: "design",
       description: "Complete rebranding for tech startup",
-      image: "/public/assets/images/Brand Identity.png",
+      image: "/assets/images/Brand Identity.png",
       gallery: [
-        "/public/assets/images/Brand Identity.png",
-        "/public/assets/images/web-dev-art-420.jpg",
+        "/assets/images/Brand Identity.png",
+        "/assets/images/web-dev-art-420.jpg",
       ],
     },
     {
@@ -115,10 +115,10 @@ const portfolioData = {
       category: "web",
       description:
         "Interactive learning management system with progress tracking",
-      image: "/public/assets/images/E-Learning Platform.png",
+      image: "/assets/images/E-Learning Platform.png",
       gallery: [
-        "/public/assets/images/E-Learning Platform.png",
-        "/public/assets/images/student-849825_1280.jpg",
+        "/assets/images/E-Learning Platform.png",
+        "/assets/images/student-849825_1280.jpg",
       ],
     },
     {
@@ -126,10 +126,10 @@ const portfolioData = {
       title: "Performance Optimization",
       category: "development",
       description: "Speed enhancements for high-traffic e-commerce site",
-      image: "/public/assets/images/seo Performance Optimization.png",
+      image: "/assets/images/seo Performance Optimization.png",
       gallery: [
-        "/public/assets/images/seo Performance Optimization.png",
-        "/public/assets/images/team-group-489.jpg",
+        "/assets/images/seo Performance Optimization.png",
+        "/assets/images/team-group-489.jpg",
       ],
     },
     {
@@ -137,10 +137,10 @@ const portfolioData = {
       title: "UX Research Report",
       category: "case",
       description: "Comprehensive study on mobile banking behaviors",
-      image: "/public/assets/images/UX Research Report.png",
+      image: "/assets/images/UX Research Report.png",
       gallery: [
-        "/public/assets/images/UX Research Report.png",
-        "/public/assets/images/workplace-1245776_1280.jpg",
+        "/assets/images/UX Research Report.png",
+        "/assets/images/workplace-1245776_1280.jpg",
       ],
     },
     {
@@ -148,10 +148,10 @@ const portfolioData = {
       title: "IoT Dashboard",
       category: "web",
       description: "Real-time monitoring for smart home devices",
-      image: "/public/assets/images/IOT Dashboard.png",
+      image: "/assets/images/IOT Dashboard.png",
       gallery: [
-        "/public/assets/images/IOT Dashboard.png",
-        "/public/assets/images/work-5382501_1280.jpg",
+        "/assets/images/IOT Dashboard.png",
+        "/assets/images/work-5382501_1280.jpg",
       ],
     },
     {
@@ -159,10 +159,10 @@ const portfolioData = {
       title: "Accessibility Audit",
       category: "case",
       description: "WCAG compliance improvements for government portal",
-      image: "/public/assets/images/Real Estate Construction.png",
+      image: "/assets/images/Real Estate Construction.png",
       gallery: [
-        "/public/assets/images/Real Estate Construction.png",
-        "/public/assets/images/Audit Firm App.png",
+        "/assets/images/Real Estate Construction.png",
+        "/assets/images/Audit Firm App.png",
       ],
     },
   ],
