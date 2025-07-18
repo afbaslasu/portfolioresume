@@ -35,11 +35,11 @@ const portfolioData = {
       category: "web",
       description:
         "Comprehensive financial analytics platform with real-time data visualization",
-      image: "/public/assets/images/Fintech Dashboard.png",
+      image: "/assets/images/Fintech Dashboard.png",
       gallery: [
-        "/public/assets/images/Fintech Dashboard.png",
-        "/public/assets/images/Audit Firm App.png",
-        "//public/assets/images/IOT Dashboard.png",
+        "/assets/images/Fintech Dashboard.png",
+        "/assets/images/Audit Firm App.png",
+        "//assets/images/IOT Dashboard.png",
       ],
     },
     {
@@ -47,10 +47,10 @@ const portfolioData = {
       title: "E-commerce Redesign",
       category: "design",
       description: "Complete UI/UX overhaul for fashion retail platform",
-      image: "/public/assets/images/E-commerce Redesign.png",
+      image: "/assets/images/E-commerce Redesign.png",
       gallery: [
-        "/public/assets/images/E-Commerce HeaderBanner 2.png",
-        "/public/assets/images/E-Commerce HeaderBanner 1.png",
+        "/assets/images/E-Commerce HeaderBanner 2.png",
+        "/assets/images/E-Commerce HeaderBanner 1.png",
       ],
     },
     {
@@ -59,10 +59,10 @@ const portfolioData = {
       category: "mobile",
       description:
         "Telemedicine platform with appointment scheduling and video consultations",
-      image: "/public/assets/images/Healthcare App.png",
+      image: "/assets/images/Healthcare App.png",
       gallery: [
-        "/public/assets/images/Healthcare App.png",
-        "/public/assets/images/tech-replying-client-6_192.jpg",
+        "/assets/images/Healthcare App.png",
+        "/assets/images/tech-replying-client-6_192.jpg",
       ],
     },
     {
