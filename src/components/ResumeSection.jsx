@@ -206,7 +206,7 @@ export default function ResumeSection() {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/3 flex flex-col items-center text-center">
               <img
-                src="/public/assets/images/ismail-ibadehin-pics.png"
+                src="/assets/images/ismail-ibadehin-pics.png"
                 className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mb-4"
               />
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
