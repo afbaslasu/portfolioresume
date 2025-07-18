@@ -26,7 +26,7 @@ const aboutData = {
     "Integrating digital technology seemlessly into classroom learning pedagogy",
   intro:
     "I transform complex problems into simpler composable chunks using both deductive and inductive teaching method for easier comprehension by students. And with a passion for creating pixel-perfect, accessible applications, I design web application that bridge the gap between classroom and off school learning.",
-  profileImage: "/public/assets/images/typing-849806_1920.jpg",
+  profileImage: "/assets/images/typing-849806_1920.jpg",
   stats: [
     { value: "100+", label: "Projects" },
     { value: "10K+", label: "Users" },
@@ -61,7 +61,7 @@ const aboutData = {
   ],
   signature: "/assets/img/signature.png",
   ctaText: "Download CV",
-  cvPath: "/public/assets/images/ibasCV Resume_2025.pdf",
+  cvPath: "/assets/images/ibasCV Resume_2025.pdf",
   badges: [
     { icon: <BiCodeCurly />, text: "AMZ KDP Certified" },
     { icon: <BiCodeCurly />, text: "Google UX Certified" },
