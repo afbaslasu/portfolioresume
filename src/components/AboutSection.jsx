@@ -56,12 +56,12 @@ const aboutData = {
   infoRight2: [
     { label: "Age", value: "41", icon: <BiUser /> },
     { label: "Degree", value: "B.Engineering", icon: <FaGraduationCap /> },
-    { label: "Email", value: "smile@c2harvard.com/afbaslasu@gmail.com", icon: <BiEnvelope /> },
+    { label: "Email", value: "afbaslasu@gmail.com", icon: <BiEnvelope /> },
     { label: "Freelance", value: "Available", icon: <BiCheckCircle /> },
   ],
   signature: "/assets/img/signature.png",
   ctaText: "Download CV",
-  cvPath: "/assets/images/ibasResume3.pdf",
+  cvPath: "/public/assets/images/ibasCV Resume_2025.pdf",
   badges: [
     { icon: <BiCodeCurly />, text: "AMZ KDP Certified" },
     { icon: <BiCodeCurly />, text: "Google UX Certified" },

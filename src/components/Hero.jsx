@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { BiDownload } from "react-icons/bi";
+import { BiDownload, BiLinkExternal } from "react-icons/bi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
@@ -117,19 +117,18 @@ export default function Hero() {
 
             <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-100 font-light leading-relaxed drop-shadow-sm">
               I have successfully prepared over a thousand students with
-              excellent results in WAEC, JAMB, IGSCE & WEB DEVT.
+              excellent results in WAEC, JAMB, IGCSE & WEB DEVT.
             </p>
 
             <div className="mt-12" data-aos="zoom-in" data-aos-delay="600">
               <a
-                href="/assets/documents/resume.pdf"
-                download="Ismail_Ibadehin_Resume.pdf"
+                href="https://afbaslasu.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-1 bg-gradient-to-r from-emerald-500 to-cyan-700 hover:from-cyan-500 hover:to-emerald-500 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                <BiDownload className="mr-3 text-xl transition-transform group-hover:scale-125" />
-                <span>
-                  i<sup>2</sup>Resume
-                </span>
+                <BiLinkExternal className="mr-3 text-xl transition-transform group-hover:scale-125" />
+                <span>View Resume</span>
               </a>
             </div>
           </div>

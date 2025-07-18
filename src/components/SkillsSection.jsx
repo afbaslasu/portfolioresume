@@ -53,7 +53,7 @@ const skillsData = {
         { name: "SQL", level: 65 },
         { name: "Data Visualization", level: 65 },
         { name: "Python", level: 20 },
-        { name: "REST APIs", level: 60 },
+        { name: "REST APIs", level: 85 },
       ],
     },
     {
@@ -73,7 +73,7 @@ const skillsData = {
         { name: "Git/GitHub", level: 95 },
         { name: "Vercel/Firebase", level: 95 },
         { name: "Testing", level: 90 },
-        { name: "Webpack", level: 40 },
+        { name: "Webpack", level: 90 },
       ],
     },
   ],

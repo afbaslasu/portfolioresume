@@ -142,7 +142,7 @@ const ContactSection = () => {
                 </h4>
                 <div className="rounded-xl overflow-hidden shadow-md h-80">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.575063750649!2d-122.4194154846821!3d37.77492997975921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1658956787890!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.9873504609814!2d7.359311474866125!3d9.155613086994515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104ddf289a34682b%3A0x6ac93342231cbe26!2sSURESTART%20HIGH%20SCHOOLS%20ABUJA!5e0!3m2!1sen!2sng!4v1752804225639!5m2!1sen!2snghttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31511.87330121896!2d7.299806017353463!3d9.155900787100327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104ddf0c2a3c1a17%3A0x544853655f0d2798!2sNo%209%20Sure%20start%20Avenue%20Kubwa!5e0!3m2!1sen!2sng!4v1752804750461!5m2!1sen!2sng"
                     className="w-full h-full border-0"
                     allowFullScreen
                     loading="lazy"
